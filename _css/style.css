@@ -73,7 +73,7 @@ header {
 }
 
 #form {
-    margin-top: 60px;
+    margin-top: 45px;
 }
 
 #email,
@@ -94,4 +94,25 @@ header {
     background-color: #f8aa07;
     color: #fff;
     text-transform: uppercase;
+}
+
+#features {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+}
+
+.fa {
+    color: #f8aa07;
+
+}
+
+.desc h2{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
