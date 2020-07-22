@@ -135,3 +135,46 @@ header {
 #video {
     width: 560px;
 }
+
+#pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.products {
+    border: 1px solid #222;
+}
+
+.level {
+    padding: 15px;
+    background-color: #ddd;
+    color: #222;
+    font-weight: 900;
+    font-size: 1.025rem;
+    text-transform: uppercase;
+}
+
+.products h3 {
+    padding: 10px;
+    font-size: 1.600rem;
+    font-weight: 600;
+
+}
+
+.products ol li {
+    padding: 5px 0;
+}
+
+.products .btn {
+    width: 130px;
+    height: 40px;
+    margin: 40px 0 20px 0;
+    font-size: 1.200rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #f8aa07;
+    border: none;
+    cursor: pointer;
+}
