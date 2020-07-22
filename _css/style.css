@@ -178,3 +178,25 @@ header {
     border: none;
     cursor: pointer;
 }
+
+#footer {
+    background-color: #ddd;
+    text-align: right;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#footer ul li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#footer span {
+    font-size: 0.9rem;
+    color: #555;
+}
