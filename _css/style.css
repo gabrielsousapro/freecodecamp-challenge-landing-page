@@ -108,16 +108,16 @@ header {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 2.5rem;
+    padding: 0 60px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: 15% 1fr;
 }
 
 .fa {
     color: #f8aa07;
-
 }
 
 .desc h2{
