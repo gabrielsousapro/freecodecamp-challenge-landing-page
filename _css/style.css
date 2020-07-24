@@ -92,7 +92,8 @@ header {
 }
 
 #email {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     background-color: #ddd;
     color: #333;
 }
@@ -103,6 +104,25 @@ header {
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+@media (max-width: 470px) {
+    #hero {
+        height: 500px;
+        padding: 0 10px 10px 10px;
+    }
+
+    #form {
+        padding: 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #submit {
+        margin-top: 20px;
+    }
 }
 
 #features {
