@@ -163,6 +163,7 @@ header {
 @media (max-width: 768px) {
     #pricing {
         grid-template-columns: 1fr;
+        row-gap: 10px;
     }
 }
 
