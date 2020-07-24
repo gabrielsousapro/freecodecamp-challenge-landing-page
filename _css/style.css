@@ -42,7 +42,13 @@ header {
 
 #nav-bar ul li {
     display: inline-block;
-    padding: 5px 40px;
+    padding: 5px 30px;
+}
+
+@media (max-width: 768px) {
+    #nav-bar {
+        display: none;
+    } 
 }
 
 #nav-bar ul li a {
@@ -113,6 +119,20 @@ header {
 
 .fa {
     color: #f8aa07;
+}
+
+@media (max-width:550px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .desc {
+        text-align: center;
+    }
 }
 
 .desc h2{
