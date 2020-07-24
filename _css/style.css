@@ -27,6 +27,12 @@ header {
     padding: 20px;
 }
 
+@media (max-width: 400px) {
+    #top {
+        padding: 20px 0;
+    }
+}
+
 #top h1 {
     display: inline-block;
 }
