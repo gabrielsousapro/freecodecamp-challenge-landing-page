@@ -148,7 +148,8 @@ header {
 }
 
 #video {
-    width: 560px;
+    width: 100%;
+    max-width: 560px;
 }
 
 #pricing {
@@ -159,8 +160,17 @@ header {
     padding: 0 10px;
 }
 
+@media (max-width: 768px) {
+    #pricing {
+        grid-template-columns: 1fr;
+    }
+}
+
 .products {
+    width: 100%;
+    max-width: 300px;
     border: 1px solid #222;
+    margin: 0 auto;
 }
 
 .level {
