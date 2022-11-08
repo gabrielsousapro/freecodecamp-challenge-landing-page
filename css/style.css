@@ -1,0 +1,271 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+:root {
+    -color-white: #f3f3f3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+header {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #fff;
+}
+
+#top {
+    padding: 20px;
+}
+
+@media (max-width: 400px) {
+    #top {
+        padding: 20px 0;
+    }
+}
+
+#top h1 {
+    display: inline-block;
+}
+
+#header-img {
+    max-width: 300px;
+    display: inline-block;
+}
+
+#nav-bar {
+    float: right;
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    display: none;
+  }
+}
+
+#nav-bar ul li {
+    display: inline-block;
+    padding: 5px 30px;
+}
+
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#hero {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h2 {
+    margin-top: -100px;
+    padding: 0px 20px 20px 20px;
+    font-size: 2.35rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    padding-left: 20px;
+}
+
+#email,
+#submit {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#email {
+    width: 100%;
+    max-width: 300px;
+    background-color: #ddd;
+    color: #333;
+}
+
+#submit {
+    width: 150px;
+    background-color: #f8aa07;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+@media (max-width: 470px) {
+    #hero {
+        height: 500px;
+        padding: 0 10px 10px 10px;
+    }
+
+    #form {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    #submit {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+}
+
+#features {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 2.5rem;
+    padding: 0 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+}
+
+.fa {
+    color: #f8aa07;
+}
+
+@media (max-width:550px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .desc {
+        text-align: center;
+    }
+}
+
+.desc h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#how-it-works {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center; 
+}
+
+#video {
+    width: 100%;
+    max-width: 560px;
+}
+
+#pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    #pricing {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+}
+
+.products {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #222;
+    margin: 0 auto;
+}
+
+.level {
+    padding: 15px;
+    background-color: #ddd;
+    color: #222;
+    font-weight: 900;
+    font-size: 1.025rem;
+    text-transform: uppercase;
+}
+
+.products h3 {
+    padding: 10px;
+    font-size: 1.600rem;
+    font-weight: 600;
+
+}
+
+.products ol li {
+    padding: 5px 0;
+    list-style: none;
+}
+
+.products .btn {
+    width: 130px;
+    height: 40px;
+    margin: 40px 0 20px 0;
+    font-size: 1.200rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #f8aa07;
+    border: none;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #ddd;
+    text-align: right;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#footer ul li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#footer span {
+    font-size: 0.9rem;
+    color: #555;
+}
